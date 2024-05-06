@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>M&M Tech Solutions</title>
-</header>
+    <title>M & M Tech Solutions</title>
+</head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">M & M Tech Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <h1 class="text-center my-5">Our Services</h1>
@@ -19,7 +40,9 @@
                     <img src="backend programming.jpg" class="card-img-top" alt="Service 1">
                     <div class="card-body">
                         <h5 class="card-title">Back End Database Management</h5>
-                        <p class="card-text">Looking for powerhouse database solutions? Our backend database development services deliver tailor-made solutions for your data needs. From design to optimization, we've got you covered. Let us handle the backend, so you can focus on scaling your business.</p>
+                        <p class="card-text">Looking for powerhouse database solutions? Our backend database development
+                            services deliver tailor-made solutions for your data needs. From design to optimization,
+                            we've got you covered. Let us handle the backend, so you can focus on scaling your business.<p>
                     </div>
                 </div>
             </div>
@@ -28,10 +51,12 @@
                     <img src="landing_page_image.jpg" class="card-img-top" alt="Service 2">
                     <div class="card-body">
                         <h5 class="card-title">Professional Landing Page</h5>
-                        <p class="card-text">Need a captivating online presence? Our professional landing page development services craft stunning, high-converting
-                        pages tailored to your brand. From sleek design to seamless functionality, we've got the expertise to make your landing
-                        page stand out. Elevate your online presence with our tailored solutions, driving engagement and conversions
-                        effortlessly.</p>
+                        <p class="card-text">Need a captivating online presence? Our professional landing page
+                            development
+                            services craft stunning, high-converting pages tailored to your brand. From sleek design to
+                            seamless functionality, we've got the expertise to make your landing page stand out. Elevate
+                            your online presence with our tailored solutions, driving engagement and conversions
+                            effortlessly.</p>
                     </div>
                 </div>
             </div>
@@ -40,42 +65,48 @@
                     <img src="UX_UI_dev_image.jpg" class="card-img-top" alt="Service 3">
                     <div class="card-body">
                         <h5 class="card-title">UI/UX Development and Design</h5>
-                        <p class="card-text">Looking to enhance user experience? Our UX/UI development services create intuitive, visually stunning interfaces that
-                        engage and delight users. From wireframing to prototyping, we design experiences that resonate with your audience. Let
-                        us elevate your digital products with seamless navigation and eye-catching design, driving user satisfaction and
-                        loyalty.</p>
+                        <p class="card-text">Looking to enhance user experience? Our UX/UI development services create
+                            intuitive, visually stunning interfaces that engage and delight users. From wireframing to
+                            prototyping, we design experiences that resonate with your audience. Let us elevate your
+                            digital products with seamless navigation and eye-catching design, driving user satisfaction
+                            and loyalty.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select class="form-control" id="service">
+                    <option>Back End Database Management </option>
+                    <option>Professional Landing Page</option>
+                    <option>UI/UX Development and Design</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
-<div class="container">
-    <h2>Contact Us</h2>
-    <form>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-            <label for="service">Select Service:</label>
-            <select class="form-control" id="service">
-                <option>Back End Database Management </option>
-                <option>Professional Landing Page</option>
-                <option>UI/UX Development and Design</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
